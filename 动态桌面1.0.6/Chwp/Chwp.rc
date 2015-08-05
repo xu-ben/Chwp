@@ -1,0 +1,305 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\Chwp.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "res\\icon1.ico"
+IDI_ICON2               ICON                    "res\\icon2.ico"
+IDI_ICON3               ICON                    "res\\icon3.ico"
+IDI_ICON4               ICON                    "res\\icon4.ico"
+IDI_ICON5               ICON                    "res\\icon5.ico"
+IDI_ICON6               ICON                    "res\\icon6.ico"
+IDR_MAINFRAME           ICON                    "res\\icon.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 212, 94
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_TOPMOST
+CAPTION "动态桌面"
+FONT 10, "宋体", 700, 0, 0x86
+BEGIN
+    ICON            IDI_ICON1,IDC_STATIC,7,6,20,20,0,WS_EX_TRANSPARENT
+    LTEXT           "动态更换桌面软件",IDC_STATIC,30,26,114,8,SS_NOPREFIX,WS_EX_TRANSPARENT
+    LTEXT           "北京林业大学  Copyright (C) 2009",IDC_STATIC,30,66,132,8,0,WS_EX_TRANSPARENT
+    DEFPUSHBUTTON   "确定",IDOK,155,18,50,14,WS_GROUP
+    LTEXT           "制作人：徐犇",IDC_STATIC,30,46,114,8,SS_NOPREFIX,WS_EX_TRANSPARENT
+END
+
+IDD_CHWP_DIALOG DIALOGEX 0, 0, 358, 275
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_TOPMOST | WS_EX_ACCEPTFILES | WS_EX_APPWINDOW
+CAPTION "动态桌面"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "应用",IDC_Ok,"Button",BS_OWNERDRAW | WS_TABSTOP,232,252,50,14,WS_EX_TRANSPARENT
+    GROUPBOX        "墙纸",IDC_STATIC,8,3,343,265
+    CONTROL         "",IDC_LIST,"SysListView32",LVS_SMALLICON | LVS_AUTOARRANGE | WS_BORDER | WS_TABSTOP,19,15,108,178,WS_EX_ACCEPTFILES | WS_EX_TRANSPARENT
+    CONTROL         "添加(&A)...",IDC_ADDPAPER,"Button",BS_OWNERDRAW | WS_TABSTOP,21,199,50,14,WS_EX_TRANSPARENT
+    CONTROL         "删除",IDC_DELETEPAPER,"Button",BS_OWNERDRAW | WS_TABSTOP,77,199,50,14,WS_EX_TRANSPARENT
+    LTEXT           "更新时间：",IDC_STATIC,20,236,35,8,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_DAY,55,219,35,12,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,90,219,10,12
+    EDITTEXT        IDC_HOUR,55,230,35,12,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_SPIN2,"msctls_updown32",UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,90,230,10,12
+    EDITTEXT        IDC_MINUTE,55,241,35,12,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_SPIN3,"msctls_updown32",UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,90,241,10,12
+    EDITTEXT        IDC_SECOND,55,252,35,12,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_SPIN4,"msctls_updown32",UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,90,252,10,12
+    LTEXT           "天",IDC_STATIC,101,221,8,8
+    LTEXT           "时",IDC_STATIC,101,232,8,8
+    LTEXT           "分",IDC_STATIC,101,243,8,8
+    LTEXT           "秒",IDC_STATIC,101,254,8,8
+    LTEXT           "显示模式：",IDC_STATIC,121,226,35,8,0,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_COMBO1,160,224,48,65,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP,WS_EX_TRANSPARENT
+    CONTROL         "退出",IDC_Exit,"Button",BS_OWNERDRAW | WS_TABSTOP,296,252,50,14,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_PICTURE,"Static",SS_BLACKFRAME | SS_REALSIZEIMAGE,135,32,200,143,WS_EX_TRANSPARENT
+    CONTROL         "随机更换",IDC_RAND,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,160,251,43,10,WS_EX_TRANSPARENT
+    CONTROL         "下一张",IDC_BUTTONNEXT,"Button",BS_OWNERDRAW | WS_TABSTOP,232,226,50,14,WS_EX_TRANSPARENT
+    CONTROL         "上一张",IDC_BUTTONLAST,"Button",BS_OWNERDRAW | WS_TABSTOP,232,199,50,14,WS_EX_TRANSPARENT
+    CONTROL         "暂停更换",IDC_BUTTONPAUSE,"Button",BS_OWNERDRAW | WS_TABSTOP,296,199,50,14,WS_EX_TRANSPARENT
+    CONTROL         "继续更换",IDC_BUTTONCONTINUE,"Button",BS_OWNERDRAW | WS_TABSTOP,296,226,50,14,WS_EX_TRANSPARENT
+    CONTROL         "隐藏到托盘",IDC_BUTTONHIDE,"Button",BS_OWNERDRAW | WS_TABSTOP,159,199,50,14,WS_EX_TRANSPARENT
+END
+
+IDD_DIALOGEXIT DIALOGEX 0, 0, 199, 111
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "退出动态桌面"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "是<&Y>",IDOK,37,71,50,24,0,WS_EX_CLIENTEDGE
+    DEFPUSHBUTTON   "否<&N>",IDCANCEL,109,71,50,24,0,WS_EX_CLIENTEDGE
+    CONTROL         152,IDC_STATIC,"Static",SS_BITMAP,29,16,139,48
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <北京林业大学>"
+            VALUE "FileDescription", "TODO: <定期更换桌面背景>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Chwp.exe"
+            VALUE "LegalCopyright", "TODO: (C) <北京林业大学>。保留所有权利。"
+            VALUE "OriginalFilename", "Chwp.exe"
+            VALUE "ProductName", "TODO: <定期更换桌面背景>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 205
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_CHWP_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 351
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 268
+    END
+
+    IDD_DIALOGEXIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 192
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU2 MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "关于(&A)",                      ID_MENUABOUT
+        MENUITEM "退出(&E)",                      ID_MENUEXIT
+    END
+END
+
+IDR_MENU1 MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "显示设置窗体(&S)",                  ID_MENUSHOW
+        MENUITEM "下一张桌面(&N)",                   ID_MENUNEXT
+        MENUITEM "上一张桌面(&L)",                   ID_MENULAST
+        MENUITEM "暂停更新桌面(&P)",                  ID_MENUPAUSE
+        MENUITEM "继续更新桌面(&C)",                  ID_MENUCONTINUE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_CHWP_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 5, 0
+0xd3be, 0xd0d6, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xbdc6, 0xccc6, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xadc0, 0xecc9, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP                  "res\\exit.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 Chwp(&A)..."
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\Chwp.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
